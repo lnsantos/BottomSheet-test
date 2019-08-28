@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFEB3B">
+    <!--
+        fabCradleMargin = Distancia do FAB
+        fabCradleRoundedCornerRadius = afetar as curvas
+        app:fabCradleVerticalOffset que
+              altera a distância vertical entre o FAB e o Bottom App Bar
+    -->
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="NEPOSTUDIO"
+                  android:textFontWeight="@android:integer/config_longAnimTime"
+                  android:textSize="50sp"
+                  android:textAlignment="center"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            android:backgroundTint="@color/colorMenuBottom"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="15dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="5dp"
+            android:padding="8dp"
+            app:hideOnScroll="true"
+    >
+
+        <ImageView
+                   android:id="@+id/imageView_menu"
+                   android:layout_width="40dp"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/ic_menu"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat"
+            app:layout_anchor="@+id/bottomAppBar"
+            android:backgroundTint="@color/colorButtonMenuPrincipal"
+            app:srcCompat="@drawable/ic_add"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
