@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(myBottomAppBar)
 
         imageView_menu.setOnClickListener{
-            val button: com.google.android.material.bottomsheet.BottomSheetDialogFragment = BottomSheetDialogFragment()
+            val button: com.google.android.material.bottomsheet.BottomSheetDialogFragment = BottomSheetDialogFragment(this)
             button.show(supportFragmentManager,button.tag)
 
         }
@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     private fun toast(message: String) {
         val toaster = Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
