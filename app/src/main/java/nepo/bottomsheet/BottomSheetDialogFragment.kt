@@ -23,7 +23,7 @@ open class BottomSheetDialogFragment(c:Context) : BottomSheetDialogFragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_bottom_sheet_dialog, container, false)
+        return inflater.inflate(R.layout.navigation, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
