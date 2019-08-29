@@ -3,4 +3,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="velozes_f">
+        Depois que <b>Brian e Mia</b> se aposentaram, e o resto da equipe foi exonerado,
+        Dom e Letty estão em lua de mel e levam uma vida pacata e completamente normal.
+        Mas a adrenalina do passado volta com tudo quando uma mulher misteriosa faz com
+        que Dom retorne ao mundo do crime e da velocidade.
+
+    </string>
+
 </resources>
